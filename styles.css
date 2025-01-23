@@ -1,0 +1,106 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.logo {
+
+    background-image: url('images/logo.jpg'); /* Fix path separator */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 150px;
+    height: 80px; 
+}
+.nav-links ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #007bff;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between;
+    gap: 20px;  
+    padding: 5%;
+    max-width: 1200px;  
+    margin: 0 auto; 
+}
+
+.bali, .paris, .dubai, .new-york, .india {
+    width: calc(50% - 10px); 
+    height: 300px;  
+    background-size: cover;  
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 8px;  
+}
+
+.bali{
+    background-image: url('images/bali.jpg'); 
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+}
+.new-york{
+    background-image: url('images/new-york.jpg'); 
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+}
+.india{
+    background-image: url('images/taj_mahal.jpg'); 
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+}
+.paris{
+    background-image: url('images/paris.jpg'); 
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+}
+.dubai{
+    background-image: url('images/dubai.jpg'); 
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+}
+
+.footer{
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}

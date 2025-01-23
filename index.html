@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>RnX Travel Agency</title>
+</head>
+<body>
+    <header class="header">
+        <div class="logo"></div>
+        <nav class="nav-links">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="bali"></div>
+        <div class="paris"></div>
+        <div class="dubai"></div>
+        <div class="new-york"></div>
+        <div class="india"></div>
+    </div>
+    <div class="footer">
+        <div class="footer-text">RnX Travel Agency</div>
+        <p id="rights"></p>
+    </div>
+</body>
+</html>
+<script>
+    let date = new Date();
+    let year = date.getFullYear();
+    document.getElementById('rights').innerHTML = `&copy; ${year} RnX Travel Agency. All Rights Reserved.`;
+</script>

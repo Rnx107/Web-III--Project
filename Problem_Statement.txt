@@ -1,0 +1,8 @@
+
+
+-Travel Agency Landing Page 
+
+-Create a landing page for a travel agency 
+with a header, popular destinations, special 
+packages, and a contact form. Use the box 
+model and make the page mobile-friendly.
