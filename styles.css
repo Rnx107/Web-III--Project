@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-.header {
+#header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -15,7 +15,7 @@
 
 .logo {
 
-    background-image: url('images/logo.jpg'); /* Fix path separator */
+    background-image: url('images/logo.jpg'); 
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -38,67 +38,118 @@
 .nav-links a:hover {
     color: #007bff;
 }
+#about {
+    padding: 4rem 5%;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+#about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+
+#about p {
+    max-width: 800px;
+    margin: 0 auto 2rem;
+    line-height: 1.6;
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+    margin: 3rem 0;
+}
+
+.feature {
+    flex: 1;
+    padding: 1.5rem;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.cta {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #007bff;
+}
 .container {
     display: flex;
     flex-wrap: wrap; 
     justify-content: space-between;
-    gap: 20px;  
     padding: 5%;
     max-width: 1200px;  
     margin: 0 auto; 
+    width: 80%
 }
 
-.bali, .paris, .dubai, .new-york, .india {
+.bali, .paris, .dubai, .new-york, .india, .egypt {
     width: calc(50% - 10px); 
     height: 300px;  
     background-size: cover;  
     background-position: center;
     background-repeat: no-repeat;
     border-radius: 8px;  
+    border: solid 1px #f1f1f1;
+    cursor: pointer;
+    margin: 25px 0;
+    transition: transform 0.3s ease;
 }
+
 
 .bali{
     background-image: url('images/bali.jpg'); 
     background-repeat: no-repeat;
     background-position: center;
-    width: 200px;
-    height: 200px;
+    width: 40%;
+    height: 400px;
     object-fit: contain;
 }
 .new-york{
     background-image: url('images/new-york.jpg'); 
     background-repeat: no-repeat;
     background-position: center;
-    width: 200px;
-    height: 200px;
+    width: 40%;
+    height: 400px;
     object-fit: contain;
 }
 .india{
     background-image: url('images/taj_mahal.jpg'); 
     background-repeat: no-repeat;
     background-position: center;
-    width: 200px;
-    height: 200px;
+    width: 40%;
+    height: 400px;
     object-fit: contain;
 }
 .paris{
     background-image: url('images/paris.jpg'); 
     background-repeat: no-repeat;
     background-position: center;
-    width: 200px;
-    height: 200px;
+    width: 40%;
+    height: 400px;
     object-fit: contain;
 }
 .dubai{
     background-image: url('images/dubai.jpg'); 
     background-repeat: no-repeat;
     background-position: center;
-    width: 200px;
-    height: 200px;
+    width: 40%;
+    height: 400px;
     object-fit: contain;
 }
+.egypt{
+    background-image: url('images/egypt.jpg'); 
+    background-repeat: no-repeat;
+    background-position: center;
+     width: 40%;
+    height: 400px;
+    object-fit: fill;
+}
 
-.footer{
+#footer{
     background-color: #333;
     color: #fff;
     text-align: center;
