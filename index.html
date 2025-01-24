@@ -1,35 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>RnX Travel Agency</title>
 </head>
+
 <body>
-    <header class="header">
-        <div class="logo"></div>
+    <header id="header">
+        <div class="logo">
+            <a href="#"><img src="images/logo.jpg" alt="RnX Travel Agency"></a>
+            <h3>A Rnx Company</h3>
+        </div>
         <nav class="nav-links">
             <ul>
                 <li><a href="#">Home</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Contact Us</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact Us</a></li>
             </ul>
         </nav>
     </header>
-    <div class="container">
-        <div class="bali"></div>
-        <div class="paris"></div>
-        <div class="dubai"></div>
-        <div class="new-york"></div>
-        <div class="india"></div>
+    <div id="about" class="section">
+        <h2>Welcome to RnX Travel Agency</h2>
+        <p>Your trusted partner in creating unforgettable travel experiences since 2010. We specialize in crafting
+            personalized journeys to the world's most stunning destinations, from the beaches of Bali to the pyramids of
+            Egypt.</p>
+        <p>At RnX Travel Agency, we've spent over a decade perfecting the art of luxury travel. Founded by seasoned
+            travelers with a passion for exploration, our agency has grown from a small local business to a respected
+            name
+            in international tourism. We've helped more than 10,000 clients create memories across 75+ countries,
+            earning
+            recognition as a Top Travel Agency in Southeast Asia for three consecutive years.</p>
+
+        <p>What sets us apart is our commitment to personalized service and attention to detail. Each itinerary is
+            crafted with care, considering your unique preferences, timeline, and budget. Whether you're planning a
+            romantic
+            getaway in Paris, an adventure in the Amazon, or a family vacation in Disney World, our expert team ensures
+            every moment of your journey is seamless and memorable.</p>
+
+        <div class="features">
+            <div class="feature">
+                <h3>Expert Planning</h3>
+                <p>Dedicated travel consultants with extensive destination knowledge.</p>
+            </div>
+            <div class="feature">
+                <h3>Custom Packages</h3>
+                <p>Tailored itineraries to match your preferences and budget.</p>
+            </div>
+            <div class="feature">
+                <h3>24/7 Support</h3>
+                <p>Round-the-clock assistance throughout your journey.</p>
+            </div>
+        </div>
+
+        <p class="cta">Let us help you plan your next adventure!</p>
     </div>
-    <div class="footer">
+    <div id="services">
+        <h2>Our Services</h2>
+        <div class="destinations-grid">
+            <div class="destination-card">
+                <img src="images/bali.jpg" alt="Bali">
+                <h3>Bali</h3>
+                <p>Discover the magic of Bali, where lush landscapes, stunning beaches, and vibrant culture await.</p>
+            </div>
+
+            <div class="destination-card">
+                <img src="images/paris.jpg" alt="Paris">
+                <h3>Paris</h3>
+                <p>Experience the romance of Paris, with its iconic landmarks, world-class cuisine, and chic boutiques.
+                </p>
+            </div>
+
+            <div class="destination-card">
+                <img src="images/dubai.jpg" alt="Dubai">
+                <h3>Dubai</h3>
+                <p>Explore the futuristic city of Dubai, home to towering skyscrapers and desert adventures.</p>
+            </div>
+
+            <div class="destination-card">
+                <img src="images/new-york.jpg" alt="New York">
+                <h3>New York</h3>
+                <p>Discover the energy of New York City, with its iconic landmarks and diverse neighborhoods.</p>
+            </div>
+
+            <div class="destination-card">
+                <img src="images/india.jpg" alt="India">
+                <h3>India</h3>
+                <p>Experience the vibrant culture of India, with its ancient temples and colorful festivals.</p>
+            </div>
+
+            <div class="destination-card">
+                <img src="images/egypt.jpg" alt="Egypt">
+                <h3>Egypt</h3>
+                <p>Uncover the mysteries of Egypt, with its ancient pyramids and majestic temples.</p>
+            </div>
+        </div>
+    </div>
+    <div id="contact">
+        <h2>Contact Us</h2>
+        <p>Have a question or need assistance? Our team is here to help!</p>
+        <form action="">
+            <fieldset>
+                <legend>Send us a message</legend>
+                <input type="text" name="name" placeholder="Name" required><br>
+                <input type="email" name="email" placeholder="Email" required><br>
+                <input type="tel" name="phone" placeholder="Phone" required><br>
+                <select name="type" id="type" required>
+                    <option value="general">General Inquiry</option>
+                    <option value="booking">Booking Assistance</option>
+                    <option value="feedback">Feedback</option>
+                </select><br>
+                <button type="submit" onclick="alert('Thank You')">Send</button>
+            </fieldset>
+        </form>
+    </div>
+    <div id="footer">
         <div class="footer-text">RnX Travel Agency</div>
         <p id="rights"></p>
     </div>
 </body>
+
 </html>
 <script>
     let date = new Date();
